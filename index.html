@@ -5,59 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Welcome to CLI Clash</h1>
-    <p>Create 2 heroes and let them fight to death!</p>
-    <p>There's no designing done to the interface, and the fight results show up ate the console.</p>
-    <p>The fight stops after 99 round if we can't decide the winner at that point.</p>
-    <form id="fight">
-      <fieldset>
-        <legend>Hero 1</legend>
+    <div class="container">
 
-        <input type="text" id="hero1name" placeholder="Hero name" required />
-        <select name="hero1" id="hero1" required>
-          <option value="" disabled selected hidden>Select the hero's class</option>
-          <option value="Warrior">Warrior</option>
-          <option value="Priest">Priest</option>
-          <option value="Mage">Mage</option>
-          <option value="Rouge">Rouge</option>
-          <option value="Archer">Archer</option>
-        </select>
-        <select name="hero1weapon" id="hero1weapon" required>
-          <option value="" disabled selected hidden>Select the hero's weapon</option>
-          <option value="Sword">Sword</option>
-          <option value="Dagger">Dagger</option>
-          <option value="WarHammer">War Hammer</option>
-          <option value="BattleAxe">Battle Axe</option>
-          <option value="Bow">Bow</option>
-          <option value="Wand">Wand</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <legend>Hero 2</legend>
-        <input type="text" id="hero2name" placeholder="Hero name" required />
-        <select name="hero2" id="hero2" required>
-          <option value="" disabled selected hidden>Select the hero's class</option>
-          <option value="Warrior">Warrior</option>
-          <option value="Priest">Priest</option>
-          <option value="Mage">Mage</option>
-          <option value="Rouge">Rouge</option>
-          <option value="Archer">Archer</option>
-        </select>
-        <select name="hero2weapon" id="hero2weapon" required>
-          <option value="" disabled selected hidden>Select the hero's weapon</option>
-          <option value="Sword">Sword</option>
-          <option value="Dagger">Dagger</option>
-          <option value="WarHammer">War Hammer</option>
-          <option value="BattleAxe">Battle Axe</option>
-          <option value="Bow">Bow</option>
-          <option value="Wand">Wand</option>
-        </select>
-      </fieldset>
-      <button>Fight</button>
-    </form>
-    <div id="log"></div>
+      <div class="wrapper">
+        <h1>CLI Clash</h1>
+        <p>Create 2 heroes and test who is the strongest!</p>
+        <p>The fight stops after 99 round if the winner is not decided yet.</p>
+        <form id="fight">
+          <fieldset>
+            <legend>Hero 1</legend>
+            <input type="text" id="hero1name" placeholder="Hero name" required />
+            <select name="hero1" id="hero1" required>
+              <option value="" disabled selected hidden>Select the hero's class</option>
+              <option value="Warrior">Warrior</option>
+              <option value="Priest">Priest</option>
+              <option value="Mage">Mage</option>
+              <option value="Rouge">Rouge</option>
+              <option value="Archer">Archer</option>
+            </select>
+            <select name="hero1weapon" id="hero1weapon" required>
+              <option value="" disabled selected hidden>Select the hero's weapon</option>
+              <option value="Sword">Sword</option>
+              <option value="Dagger">Dagger</option>
+              <option value="WarHammer">War Hammer</option>
+              <option value="BattleAxe">Battle Axe</option>
+              <option value="Bow">Bow</option>
+              <option value="Wand">Wand</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Hero 2</legend>
+            <input type="text" id="hero2name" placeholder="Hero name" required />
+            <select name="hero2" id="hero2" required>
+              <option value="" disabled selected hidden>Select the hero's class</option>
+              <option value="Warrior">Warrior</option>
+              <option value="Priest">Priest</option>
+              <option value="Mage">Mage</option>
+              <option value="Rouge">Rouge</option>
+              <option value="Archer">Archer</option>
+            </select>
+            <select name="hero2weapon" id="hero2weapon" required>
+              <option value="" disabled selected hidden>Select the hero's weapon</option>
+              <option value="Sword">Sword</option>
+              <option value="Dagger">Dagger</option>
+              <option value="WarHammer">War Hammer</option>
+              <option value="BattleAxe">Battle Axe</option>
+              <option value="Bow">Bow</option>
+              <option value="Wand">Wand</option>
+            </select>
+          </fieldset>
+          <button>Fight</button>
+        </form>
+      </div>
+      <div class="output"></div>
+    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
