@@ -1,0 +1,12 @@
+{
+  "name": "cli-clash",
+  "version": "1.0.0",
+  "description": "prioris beugro feladat, node v16.17.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Lakics",
+  "license": "ISC",
+  "type": "module"
+}
