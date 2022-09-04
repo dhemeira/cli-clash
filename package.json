@@ -1,7 +1,7 @@
 {
   "name": "cli-clash",
-  "version": "1.0.0",
-  "description": "prioris beugro feladat, node v16.17.0",
+  "version": "1.1.0",
+  "description": "Simple nodejs v16.17.0 game: round-based 1v1 auto arena. Can be run in browser with live server or with node.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
